@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pdf-to-audio-app"
+version = "0.1.0"
+description = "This is a simple app that converts pdf to audio"
+authors = ["IBK <ibukunoluwa.adetoba@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyttsx3 = "^2.91"
+PyPDF2 = "^3.0.1"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.2"
+black = "^24.8.0"
+pylint = "^3.2.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
+
+[tool.pylint.MASTER]
+disable = ["C0114", "C0301"]
+
+[tool.black]
+line-length = 120
