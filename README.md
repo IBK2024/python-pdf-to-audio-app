@@ -100,3 +100,6 @@ Some commands to know. Make sure to activate the virtual environment first:
   poetry run mypy .
   poetry run pylint **/*.py
   ```
+
+### When your done
+Create a pull request
